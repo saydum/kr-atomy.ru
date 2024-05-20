@@ -8,6 +8,9 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+    <!-- Yandex ID -->
+    <meta name="yandex-verification" content="62618831474cc3f8" />
+
     <!-- Favicon -->
     <link href="{{ asset('web/img/favicon.ico') }}" rel="icon">
 
@@ -29,6 +32,35 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('web/css/style.css') }}" rel="stylesheet">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(97335169, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/97335169" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Виджет -->
+    <script type="text/javascript">
+        window.dgSocialWidgetData = {
+            widgetId: '5911c27f-7333-4ec9-946b-6b51e06a38ab',
+            apiUrl: 'https://app.daily-grow.com/sw/api/v1',
+        };
+    </script>
+    <script type="text/javascript" src="https://app.daily-grow.com/social-widget/init.js" defer></script>
+    <!-- Виджет End -->
+
 </head>
 
 <body>
