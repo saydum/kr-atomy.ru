@@ -18,6 +18,8 @@ class WebController extends Controller
         $validatedData = $request->validated();
         $validatedData['agree'] = $request->boolean('agree');
         Employee::create($validatedData);
-        return redirect()->route('web.index');
+        return redirect()
+            ->route('web.index')
+            ->with('success', 'Сообщение успешно отправлено, скоро с вами свяжется представитель компании Atomy.');
     }
 }

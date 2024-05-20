@@ -23,7 +23,7 @@ class EmployeeRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:35'],
-            'phone' => ['required', 'numeric', 'digits:15'],
+            'phone' => ['required', 'numeric'],
             'agree' => ['required', 'boolean'], // Даю свое согласие
             'type_soc_network' => ['required', 'string', 'max:15'] // WhatsApp Telegram
         ];

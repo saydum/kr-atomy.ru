@@ -11,6 +11,7 @@
                             а так же для оформления заказа.
                         </p>
                     </div>
+
                     <form action="{{ route('web.employee.save') }}" method="post">
 
                         @csrf

@@ -47,4 +47,7 @@
             </div>
         </div>
     </nav>
+    <!-- alert success -->
+    @include('web.sections.alert-success')
+    <!-- alert success End -->
 </div>
