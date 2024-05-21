@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Finanza - Financial Services Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+
+    <!-- Title meta tags -->
+    @seo
+    <!-- Title meta tags End -->
 
     <!-- Yandex ID -->
     <meta name="yandex-verification" content="62618831474cc3f8" />

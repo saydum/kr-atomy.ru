@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use App\MoonShine\Resources\EmployeeResource;
+use App\MoonShine\Resources\SeoResource;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
 use MoonShine\MoonShine;
 use MoonShine\Menu\MenuGroup;
@@ -43,6 +44,10 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuItem::make('Сотрудники', new EmployeeResource())
                 ->icon('heroicons.outline.users'),
+
+            MenuItem::make('CEO', new SeoResource())
+                ->icon('heroicons.outline.presentation-chart-line'),
+
 
             MenuGroup::make(static fn() => __('moonshine::ui.resource.system'), [
                MenuItem::make(
