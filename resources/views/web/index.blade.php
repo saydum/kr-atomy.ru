@@ -22,25 +22,13 @@
 @include('web.sections.features')
 <!-- Features End -->
 
-<!-- Service Start -->
-@include('web.sections.services ')
-<!-- Service End -->
+<!-- Testimonial Start -->
+@include('web.sections.testimonial')
+<!-- Testimonial End -->
 
 <!-- Callback Start -->
 @include('web.sections.callback')
 <!-- Callback End -->
-
-<!-- Projects Start -->
-@include('web.sections.projects')
-<!-- Projects End -->
-
-<!-- Team Start -->
-@include('web.sections.team')
-<!-- Team End -->
-
-<!-- Testimonial Start -->
-@include('web.sections.testimonial')
-<!-- Testimonial End -->
 
 <!-- Footer Start -->
 @include('web.sections.footer')

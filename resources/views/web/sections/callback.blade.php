@@ -1,4 +1,4 @@
-<div class="container-fluid callback my-5 pt-5">
+<div id="callback" class="container-fluid callback my-5 pt-5 mb-5 pb-5">
     <div class="container pt-5">
         <div class="row justify-content-center">
             <div class="col-lg-7">
@@ -59,7 +59,9 @@
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="agree" name="agree"
                                            value="1" {{ old('agree') ? 'checked' : '' }}>
-                                    <label for="agree">Я даю своё согласие на регистрацию личного кабинета</label>
+                                    <label for="agree">
+                                        Я даю своё согласие на регистрацию личного кабинета
+                                    </label>
                                     @error('agree')
                                     <div class="alert alert-danger">{{ $message }}</div>
                                     @enderror

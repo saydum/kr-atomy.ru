@@ -7,9 +7,11 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-lg-8">
-                                <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Welcome to Finanza</p>
-                                <h1 class="display-1 mb-4 animated slideInDown">Your Financial Status Is Our Goal</h1>
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
+                                <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Добро пожаловать в Atomy</p>
+                                <h1 class="display-3 mb-4 animated slideInDown">
+                                    Начните зарабатывать с Atomy с любой точки мира!
+                                </h1>
+                                <a href="#callback" class="btn btn-primary py-3 px-5 animated slideInDown">Начать зарабатывать</a>
                             </div>
                         </div>
                     </div>
@@ -21,9 +23,11 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-lg-7">
-                                <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Welcome to Finanza</p>
-                                <h1 class="display-1 mb-4 animated slideInDown">True Financial Support For You</h1>
-                                <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
+                                <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">Добро пожаловать в Atomy</p>
+                                <h1 class="display-3 mb-4 animated slideInDown">
+                                    Компания Atomy предлогает продукцию премиум класса по доступной цене.
+                                </h1>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Каталог товаров</a>
                             </div>
                         </div>
                     </div>
