@@ -1,4 +1,4 @@
-<div id="features" class="container-xxl feature py-5">
+<div id="features" class="container-xxl">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -7,6 +7,7 @@
                 <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                 <a class="btn btn-primary py-3 px-5" href="">Explore More</a>
             </div>
+
             <div class="col-lg-6">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6">
@@ -39,6 +40,63 @@
                     </div>
                 </div>
             </div>
+
+            <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-times text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>No Hidden Cost</h4>
+                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                </div>
+                                <div class="border-end d-none d-lg-block"></div>
+                            </div>
+                            <div class="border-bottom mt-4 d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-users text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>Dedicated Team</h4>
+                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                </div>
+                                <div class="border-end d-none d-lg-block"></div>
+                            </div>
+                            <div class="border-bottom mt-4 d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="h-100">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-phone text-white"></i>
+                                </div>
+                                <div class="ps-3">
+                                    <h4>24/7 Available</h4>
+                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
+
+<div class="container-fluid facts mt-5 mb-2 feature" style="width: auto; height: 60px">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+
