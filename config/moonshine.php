@@ -101,11 +101,12 @@ return [
 
     'tinymce' => [
         'file_manager' => false, // or 'laravel-filemanager' prefix for lfm
-        'token' => env('MOONSHINE_TINYMCE_TOKEN', ''),
+        'token' => env('MOONSHINE_TINYMCE_TOKEN', '65d666fc9c9c31ec82ed366bab16cd058b9da5553cfccf88c2c70e5663d01077'),
         'version' => env('MOONSHINE_TINYMCE_VERSION', '6'),
     ],
 
     'socialite' => [
         // 'driver' => 'path_to_image_for_button'
     ],
+
 ];

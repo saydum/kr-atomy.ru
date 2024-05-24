@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\MoonShine\Resources\CategoryResource;
 use App\MoonShine\Resources\EmployeeResource;
+use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\SeoResource;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
 use MoonShine\MoonShine;
@@ -44,6 +46,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuItem::make('Сотрудники', new EmployeeResource())
                 ->icon('heroicons.outline.users'),
+
+            MenuGroup::make('Каталог', [
+                MenuItem::make('Продукты', new ProductResource())->icon('heroicons.outline.shopping-bag'),
+                MenuItem::make('Категория', new CategoryResource())->icon('heroicons.outline.tag'),
+            ])->icon('heroicons.outline.shopping-cart'),
 
             MenuItem::make('CEO', new SeoResource())
                 ->icon('heroicons.outline.presentation-chart-line'),
