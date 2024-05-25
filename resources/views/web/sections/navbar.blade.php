@@ -12,7 +12,7 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+        <a href="/" class="navbar-brand ms-4 ms-lg-0">
             <h3 class="text-primary m-0">kr-atomy.ru</h3>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -25,11 +25,10 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Каталог</a>
                     <div class="dropdown-menu border-light m-0">
-                        <a href="project.html" class="dropdown-item">Projects</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="team.html" class="dropdown-item">Team Member</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        @foreach($categories as $category)
+                            <a href="{{ route('web.products.slug', $category->slug) }}"
+                               class="dropdown-item">{{ $category->name }}</a>
+                        @endforeach
                     </div>
                 </div>
                 <a href="#features" class="nav-item nav-link">Зарабатывать с Atomy</a>

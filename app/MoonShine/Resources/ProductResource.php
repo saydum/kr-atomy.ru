@@ -7,6 +7,7 @@ namespace App\MoonShine\Resources;
 use Illuminate\Database\Eloquent\Model;
 
 use MoonShine\Fields\Image;
+use MoonShine\Fields\Relationships\MorphToMany;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\TinyMce;
 use MoonShine\Resources\ModelResource;
@@ -37,6 +38,15 @@ class ProductResource extends ModelResource
                 Image::make('Фото', 'image'),
                 TinyMce::make('Description')
             ]),
+        ];
+    }
+
+    public function indexFields(): array
+    {
+        return [
+            ID::make()->sortable(),
+            Text::make('Название', 'name'),
+            Image::make('Фото', 'image'),
         ];
     }
 

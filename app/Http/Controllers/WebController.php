@@ -5,12 +5,17 @@ namespace App\Http\Controllers;
 use App\Models\Employee;
 use Illuminate\Http\RedirectResponse;
 use App\Http\Requests\EmployeeRequest;
+use Modules\Catalog\Models\Category;
 
 class WebController extends Controller
 {
     public function index()
     {
-        return view('web.index');
+        $categories = Category::all();
+        return view('web.index',
+            [
+                'categories' => $categories
+            ]);
     }
 
     public function saveEmployee(EmployeeRequest $request): RedirectResponse
