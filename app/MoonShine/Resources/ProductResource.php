@@ -36,6 +36,7 @@ class ProductResource extends ModelResource
                 ID::make()->sortable(),
                 Text::make('Название', 'name'),
                 Image::make('Фото', 'image'),
+                MorphToMany::make('Категория', 'categories', 'name'),
                 TinyMce::make('Description')
             ]),
         ];

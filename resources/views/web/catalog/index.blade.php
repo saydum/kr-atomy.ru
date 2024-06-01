@@ -1,52 +1,33 @@
 @extends('web.layout')
 
 @section('content')
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
-                <h1 class="display-5 mb-5">Exclusive Team</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="{{ asset('web/img/team-1.jpg') }}" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Kate Winslet</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+    <div class="container mt-5 mb-5">
+        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-5 mb-5 mt-5">Каталог товаров</h1>
+        </div>
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-10">
+                @foreach($products as $product)
+                    <div class="row p-2 mb-4 bg-white border rounded">
+                        <div class="col-md-4 mt-1">
+                            <img
+                                class="img-fluid img-responsive rounded product-image"
+                                src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
+                        </div>
+                        <div class="col-md-6 mt-1">
+                            <h5 class="pt-5">{{ $product->name }}</h5>
+                            <div class="mt-1 mb-1 spec-1">
+                                <p class="text-black-50 text-justify para mb-0">
+                                    @words($product->description, 40, '...')
+                                </p>
                             </div>
+                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                <button class="btn btn-primary" type="button">Подробнее</button>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="{{ asset('web/img/team-2.jpg') }}" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Jac Jacson</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <img class="img-fluid rounded" src="{{ asset('web/img/team-3.jpg') }}" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

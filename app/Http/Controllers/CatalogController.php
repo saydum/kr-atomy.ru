@@ -15,8 +15,8 @@ class CatalogController extends Controller
     public function slug($slug)
     {
         $category = Category::where('slug', '=', $slug)->firstOrFail();
-//        $products = $category->products;
-        return view('web.catalog.index', compact('category'));
+        $products = $category->products;
+        return view('web.catalog.index', compact('products'));
     }
 
 //    public function show(Product $product)
