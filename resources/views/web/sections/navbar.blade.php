@@ -14,6 +14,8 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Каталог</a>
                     <div class="dropdown-menu border-light m-0">
+                        <a href="{{ route('web.products.index') }}"
+                           class="dropdown-item">Все товары</a>
                         @foreach($categories as $category)
                             <a href="{{ route('web.products.slug', $category->slug) }}"
                                class="dropdown-item">{{ $category->name }}</a>

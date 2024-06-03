@@ -19,8 +19,8 @@ class CatalogController extends Controller
         return view('web.catalog.index', compact('products'));
     }
 
-//    public function show(Product $product)
-//    {
-//        return view('web.catalog.show', compact('product'));
-//    }
+    public function show(Product $product)
+    {
+        return view('web.catalog.show', compact('product'));
+    }
 }

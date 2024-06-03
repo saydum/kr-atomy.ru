@@ -11,8 +11,8 @@
                     <div class="row p-2 mb-4 bg-white border rounded">
                         <div class="col-md-4 mt-1">
                             <img
-                                class="img-fluid img-responsive rounded product-image"
-                                src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
+                                    class="img-fluid img-responsive rounded product-image"
+                                    src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}">
                         </div>
                         <div class="col-md-6 mt-1">
                             <h5 class="pt-5">{{ $product->name }}</h5>
@@ -22,7 +22,11 @@
                                 </p>
                             </div>
                             <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                <button class="btn btn-primary" type="button">Подробнее</button>
+                                <a
+                                    href="{{ route('web.products.show', $product->id) }}"
+                                    class="btn btn-primary py-3 px-5">
+                                    Подробнее
+                                </a>
                             </div>
 
                         </div>
