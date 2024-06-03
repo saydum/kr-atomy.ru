@@ -9,8 +9,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Главное</a>
-                <a href="#about" class="nav-item nav-link">О компании</a>
+                <a href="/" class="nav-item nav-link active">Главное</a>
+                <a href="/#about" class="nav-item nav-link">О компании</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Каталог</a>
                     <div class="dropdown-menu border-light m-0">
@@ -22,8 +22,8 @@
                         @endforeach
                     </div>
                 </div>
-                <a href="#features" class="nav-item nav-link">Зарабатывать с Atomy</a>
-                <a href="#footer" class="nav-item nav-link">Контакты</a>
+                <a href="/#features" class="nav-item nav-link">Зарабатывать с Atomy</a>
+                <a href="/#footer" class="nav-item nav-link">Контакты</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
                 <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
