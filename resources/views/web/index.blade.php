@@ -19,7 +19,7 @@
 <!-- Features End -->
 
 <!-- Testimonial Start -->
-@include('web.sections.testimonial')
+{{-- @include('web.sections.testimonial') --}}
 <!-- Testimonial End -->
 
 <!-- Callback Start -->

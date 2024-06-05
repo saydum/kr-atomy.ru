@@ -92,7 +92,7 @@
 @yield('content')
 
 <!-- Footer Start -->
-@include('web.sections.footer')
+{{-- @include('web.sections.footer') --}}
 <!-- Footer End -->
 
 <!-- Copyright Start -->

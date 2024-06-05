@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <a href="/#features" class="nav-item nav-link">Зарабатывать с Atomy</a>
-                <a href="/#footer" class="nav-item nav-link">Контакты</a>
+                {{-- <a href="/#footer" class="nav-item nav-link">Контакты</a> --}}
             </div>
 
 {{--            @include('web.sections.social')--}}

@@ -61,9 +61,3 @@
         </div>
     </div>
 </div>
-
-<div class="container-fluid facts mt-5 mb-2 feature" style="width: auto; height: 60px">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
