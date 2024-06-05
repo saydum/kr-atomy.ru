@@ -21,6 +21,7 @@ class CatalogController extends Controller
 
     public function show(Product $product)
     {
+        $this->seoTagsSave($product);
         return view('web.catalog.show', compact('product'));
     }
 }

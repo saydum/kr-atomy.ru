@@ -58,6 +58,24 @@ class SeoResource extends ModelResource
         ];
     }
 
+    public function indexFields(): array
+    {
+        return [
+            Block::make([
+                ID::make()->sortable(),
+                Text::make('Url')
+                ->required()
+                ->showOnExport()
+                ->useOnImport(),
+
+            Text::make('Title')
+                ->required()
+                ->showOnExport()
+                ->useOnImport(),
+            ])
+        ];
+    }
+
     public function rules(Model $item): array
     {
         return [
