@@ -64,7 +64,7 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-    <!-- Виджет -->
+    {{-- <!-- Виджет -->
     <script type="text/javascript">
         window.dgSocialWidgetData = {
             widgetId: '5911c27f-7333-4ec9-946b-6b51e06a38ab',
@@ -72,7 +72,7 @@
         };
     </script>
     <script type="text/javascript" src="https://app.daily-grow.com/social-widget/init.js" defer></script>
-    <!-- Виджет End -->
+    <!-- Виджет End --> --}}
 
 </head>
 
