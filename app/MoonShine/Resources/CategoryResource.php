@@ -33,8 +33,7 @@ class CategoryResource extends ModelResource
             Block::make([
                 ID::make()->sortable(),
                 Text::make('Название', 'name'),
-                Slug::make('Slug')->from('name')->unique()->isHidden(),
-                HasMany::make('Товары', 'products', 'name'),
+                Slug::make('slug')->from('name')->unique(),
             ]),
         ];
     }
