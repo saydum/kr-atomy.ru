@@ -3,7 +3,7 @@
 namespace Modules\Catalog\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Product extends Model
 {
@@ -11,11 +11,12 @@ class Product extends Model
     protected $fillable = [
         'name',
         'image',
+        'category_id',
         'description',
     ];
 
-    public function categories(): BelongsToMany
+    public function category(): BelongsTo
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsTo(Category::class);
     }
 }

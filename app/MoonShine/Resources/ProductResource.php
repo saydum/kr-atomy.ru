@@ -7,7 +7,6 @@ namespace App\MoonShine\Resources;
 use Illuminate\Database\Eloquent\Model;
 
 use MoonShine\Fields\Image;
-use MoonShine\Fields\Relationships\MorphToMany;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\TinyMce;
 use MoonShine\Resources\ModelResource;
@@ -16,6 +15,7 @@ use MoonShine\Fields\ID;
 use MoonShine\Fields\Field;
 use MoonShine\Components\MoonShineComponent;
 use Modules\Catalog\Models\Product;
+use MoonShine\Fields\Relationships\BelongsTo;
 
 /**
  * @extends ModelResource<Product>
@@ -36,7 +36,7 @@ class ProductResource extends ModelResource
                 ID::make()->sortable(),
                 Text::make('Название', 'name'),
                 Image::make('Фото', 'image'),
-                MorphToMany::make('Категория', 'categories', 'name'),
+                BelongsTo::make('Категория', 'category', 'name')->nullable(),
                 TinyMce::make('Description')
             ]),
         ];

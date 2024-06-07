@@ -4,15 +4,16 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use Illuminate\Database\Eloquent\Model;
-use Modules\Catalog\Models\Category;
+use MoonShine\Fields\ID;
 use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
-use MoonShine\Resources\ModelResource;
-use MoonShine\Decorations\Block;
-use MoonShine\Fields\ID;
 use MoonShine\Fields\Field;
+use MoonShine\Decorations\Block;
+use Modules\Catalog\Models\Category;
+use MoonShine\Resources\ModelResource;
+use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
+use MoonShine\Fields\Relationships\HasMany;
 
 /**
  * @extends ModelResource<Category>
@@ -33,6 +34,7 @@ class CategoryResource extends ModelResource
                 ID::make()->sortable(),
                 Text::make('Название', 'name'),
                 Slug::make('Slug')->from('name')->unique()->isHidden(),
+                HasMany::make('Товары', 'products', 'name'),
             ]),
         ];
     }
