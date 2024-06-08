@@ -12,7 +12,7 @@
                         </p>
                     </div>
 
-                    <form action="{{ route('web.employee.save') }}" method="post">
+                    <form action="{{ route('web.form.send') }}" method="post">
 
                         @csrf
                         <div class="row g-3">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WebController;
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\CatalogController;
 
 
@@ -11,7 +12,4 @@ Route::get('/products', [CatalogController::class, 'index'])->name('web.products
 Route::get('/products/{product}/show', [CatalogController::class, 'show'])->name('web.products.show');
 Route::get('/products/{slug}', [CatalogController::class, 'slug'])->name('web.products.slug');
 
-Route::post(
-    '/web/employees/save',
-    [WebController::class, 'saveEmployee'])
-    ->name('web.employee.save');
+Route::post('/web/form/send', [FormController::class, 'send'])->name('web.form.send');
